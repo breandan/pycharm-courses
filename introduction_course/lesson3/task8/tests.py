@@ -6,8 +6,9 @@ def test_value():
 
     first = "The name of this ice-cream is \\\"Sweeet'n'Tasty\\\""
     second = 'The name of this ice-cream is "Sweeet\\\'n\\\'Tasty"'
+    third = "The name of this ice-cream is \\\"Sweeet\\'n\\'Tasty\\\""
 
-    if first in window or second in window:
+    if first in window or second in window or third in window:
         passed()
     else:
         failed("Use backslash (\\) to escape quotes")
